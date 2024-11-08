@@ -28,6 +28,11 @@ function printToList() {
             listItem.remove();
             removeButton.remove();
         });
+
+        listItem.addEventListener("click", function() {
+            listItem.innerHTML = `<s>${listItem.innerHTML}</s>`;
+            listItem.style.color = "#801f1f";
+        });
     };
 };
 
